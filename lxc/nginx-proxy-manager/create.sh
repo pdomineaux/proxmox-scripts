@@ -192,4 +192,4 @@ EOF
 info "Setting up LXC container..."
 pct start $_ctid
 sleep 3
-pct exec $_ctid -- sh -c "wget --no-cache -qO - $_raw_base/setup.sh | sh"
+pct exec $_ctid -- sh -c "wget --no-cache -qO - https://raw.githubusercontent.com/pdomineaux/proxmox-scripts/main/lxc/nginx-proxy-manager/setup.sh | sh"
